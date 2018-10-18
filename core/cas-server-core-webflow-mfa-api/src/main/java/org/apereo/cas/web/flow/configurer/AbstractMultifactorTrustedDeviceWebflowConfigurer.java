@@ -70,7 +70,7 @@ public abstract class AbstractMultifactorTrustedDeviceWebflowConfigurer extends 
         if (enableDeviceRegistration) {
             createTransitionForState(verifyAction, CasWebflowConstants.TRANSITION_ID_YES, CasWebflowConstants.STATE_ID_FINISH_MFA_TRUSTED_AUTH);
         } else {
-            createTransitionForState(verifyAction, CasWebflowConstants.TRANSITION_ID_YES, CasWebflowConstants.STATE_ID_REAL_SUBMIT);
+            createTransitionForState(verifyAction, CasWebflowConstants.TRANSITION_ID_YES, CasWebflowConstants.STATE_ID_SUCCESS);
         }
         createTransitionForState(verifyAction, CasWebflowConstants.TRANSITION_ID_NO, targetStateId);
 
